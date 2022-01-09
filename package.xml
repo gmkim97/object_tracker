@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>object_tracker</name>
+  <version>1.0.0</version>
+  <description>The object_tracker package</description>
+
+  <maintainer email="kgm04008@gmail.com">gmkim</maintainer>
+  <license>MIT</license>
+  <url type="website">https://github.com/gmkim97/object_tracker</url>
+
+
+
+  <!-- The *depend tags are used to specify dependencies -->
+  <!-- Dependencies can be catkin packages or system dependencies -->
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>cv_bridge</build_depend>
+  <build_depend>darknet_ros_msgs</build_depend>
+  <build_depend>geometry_msgs</build_depend>
+  <build_depend>rospy</build_depend>
+  <build_depend>sensor_msgs</build_depend>
+  <build_depend>std_msgs</build_depend>
+  <build_depend>tf</build_depend>
+  <build_export_depend>cv_bridge</build_export_depend>
+  <build_export_depend>darknet_ros_msgs</build_export_depend>
+  <build_export_depend>geometry_msgs</build_export_depend>
+  <build_export_depend>rospy</build_export_depend>
+  <build_export_depend>sensor_msgs</build_export_depend>
+  <build_export_depend>std_msgs</build_export_depend>
+  <build_export_depend>tf</build_export_depend>
+  <exec_depend>cv_bridge</exec_depend>
+  <exec_depend>darknet_ros_msgs</exec_depend>
+  <exec_depend>geometry_msgs</exec_depend>
+  <exec_depend>rospy</exec_depend>
+  <exec_depend>sensor_msgs</exec_depend>
+  <exec_depend>std_msgs</exec_depend>
+  <exec_depend>tf</exec_depend>
+
+
+  <!-- The export tag contains other, unspecified, tags -->
+  <export>
+    <!-- Other tools can request additional information be placed here -->
+
+  </export>
+</package>

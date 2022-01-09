@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<launch>
+
+  <include file="$(find realsense2_camera)/launch/rs_camera.launch">
+    <arg name="align_depth"    value="true"/>
+  </include>
+
+  <include file="$(find darknet_ros)/launch/darknet_ros.launch">
+    <arg name="image"    value="/camera/color/image_raw"/>
+  </include>
+
+  <node name="object_tracker" pkg="object_tracker" type="object_tracker_py3.py"/>
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find object_tracker)/config/object_tracking_config.rviz"/>
+
+</launch>
