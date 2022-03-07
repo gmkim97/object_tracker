@@ -10,7 +10,7 @@
     <arg name="image"    value="/camera/color/image_raw"/>
   </include>
 
-  <node name="object_tracker" pkg="object_tracker" type="object_tracker_py3.py"/>
+  <node name="object_tracker" pkg="object_tracker" type="object_tracker_py3.py" output="screen"/>
   <node name="rviz" pkg="rviz" type="rviz" args="-d $(find object_tracker)/config/object_tracking_config.rviz"/>
 
 </launch>
